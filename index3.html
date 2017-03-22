@@ -8,7 +8,7 @@
 
 	<form id="frm1">
 		Nombre: <input type="text" name="name" id="name"><br>
-		Mail: <input type="text" name="email" id="email"><br>
+		Mail: <input type="email" name="email" id="email"><br>
 	</form>
 	<button onclick="myFunction()">Mostrar</button>
 
@@ -21,8 +21,8 @@
       var correoE = document.getElementById("email").value;
       var muestraNombre = document.getElementById("mostrarNombre");
       var muestraMail = document.getElementById("mostrarMail");
-      muestraNombre.innerHTML = nombre;
-      muestraMail.innerHTML = correoE;
+      muestraNombre.innerHTML = "El nombre es: " + nombre;
+      muestraMail.innerHTML = "El correo es: " + correoE;
 		}
 	</script>
 </body>
