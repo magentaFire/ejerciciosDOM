@@ -19,20 +19,18 @@
     var cuantosMensajes = document.getElementsByClassName('mensaje').length;
     console.log(cuantosMensajes);
     var escribe = document.getElementsByTagName('span');
-    var es1 = "Es muy poco"
-    var es2 = "No está mal"
-    var es3 = "Son muchos!"
+    console.log(escribe);
     if (cuantosMensajes === 1)
     {
-      escribe.innerHTML = es1;
+      escribe.innerHTML = "Es muy poco";
     }
     else if (cuantosMensajes > 1 && cuantosMensajes <= 4)
     {
-      escribe.innerHTML = es2;
+      escribe.innerHTML = "No está mal";
     }
     else
     {
-      escribe.html = es3;
+      escribe.html = "Son muchos!";
     }
 
 	</script>
